@@ -1,5 +1,6 @@
 import React from 'react';
 import { motion } from 'framer-motion';
+import MouseReactiveImage from '../components/MouseReactiveImage';
 
 const Introduction = () => {
   return (
@@ -13,10 +14,6 @@ const Introduction = () => {
           <h1 className="text-5xl font-bold bg-clip-text text-transparent bg-gradient-to-r from-purple-400 to-pink-400 mb-6">
             Introduction to AI in Education
           </h1>
-          <p className="text-xl text-gray-300 max-w-3xl mx-auto">
-            Artificial Intelligence is revolutionizing education by providing personalized learning experiences
-            and enabling data-driven decision making in educational institutions.
-          </p>
         </motion.div>
 
         <div className="grid grid-cols-1 lg:grid-cols-1 gap-12">
@@ -26,23 +23,28 @@ const Introduction = () => {
             transition={{ delay: 0.2 }}
             className="space-y-6"
           >
+            <div className="relative overflow-hidden rounded-2xl">
+              <div className="absolute inset-0 bg-gradient-to-r from-purple-500/20 to-pink-500/20 backdrop-blur-xl"></div>
+              <MouseReactiveImage
+                src="/images/AIEducation.jpg" 
+                alt="AI in Education" 
+                className="w-full h-96 object-cover rounded-2xl mix-blend-overlay"
+              />
+            </div>
             <div className="bg-gradient-to-r from-purple-500/10 to-pink-500/10 p-8 rounded-2xl backdrop-blur-xl border border-purple-500/20">
-              <h2 className="text-3xl font-bold text-white mb-4">Overview</h2>
+              <p className="text-gray-300 leading-relaxed mb-6">
+              Artificial Intelligence (AI) in education involves the use of computer platforms to manage learning and administrative tasks that typically require human intelligence, with the goal of improving learning experiences and supporting both students and educators. 
+              </p>
+              <p className="text-gray-300 leading-relaxed mb-6">
+              Artificial intelligence  technology, such as robots, machine learning, an natural language processing, can customize learning by adjusting pace and content to meet the needs of each individual learner. Each student will have the opportunity and resources they require to accomplish their goals owing to this individualized approach, which helps accommodate a variety of learning styles and speeds ( OpenAI, 2025).
+              </p>
               <p className="text-gray-300 leading-relaxed">
-                AI is transforming traditional educational methods by introducing innovative ways to teach,
-                learn, and assess. This technology enables personalized learning paths and provides
-                real-time feedback to both students and educators.
+              AI in education may encourage interactive learning environments and creative teaching strategies. AI has the potential to revolutionize education through making it more efficient, individualized, and accessible as it develops (Clugston, 2024).
+
               </p>
             </div>
 
-            <div className="relative overflow-hidden rounded-2xl">
-              <div className="absolute inset-0 bg-gradient-to-r from-purple-500/20 to-pink-500/20 backdrop-blur-xl"></div>
-              <img
-                src="https://images.unsplash.com/photo-1501504905252-473c47e087f8?ixlib=rb-1.2.1&auto=format&fit=crop&w=1950&q=80"
-                alt="Education Technology"
-                className="w-full h-64 object-cover rounded-2xl mix-blend-overlay"
-              />
-            </div>
+            
           </motion.div>
 
           <motion.div
