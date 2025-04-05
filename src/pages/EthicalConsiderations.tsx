@@ -2,7 +2,7 @@ import React from 'react';
 import YouTube from 'react-youtube';
 import { motion } from 'framer-motion';
 import { Rocket, Globe, Cpu, Network } from 'lucide-react';
-
+import MouseReactiveImage from '../components/MouseReactiveImage';
 const EthicalConsiderations = () => {
   const features = [
     {
@@ -38,6 +38,15 @@ const EthicalConsiderations = () => {
           <h1 className="text-5xl font-bold bg-clip-text text-transparent bg-gradient-to-r from-cyan-400 to-blue-400 mb-6">
             Ethical Considerations
           </h1>
+
+          <div className="relative overflow-hidden rounded-2xl">
+              <div className="absolute inset-0 bg-gradient-to-r from-purple-500/20 to-pink-500/20 backdrop-blur-xl"></div>
+              <MouseReactiveImage
+                src="/images/Ethical.jpeg" 
+                alt="AI in Education" 
+                className="w-full h-96 object-cover rounded-2xl mix-blend-overlay"
+              />
+            </div>
 
         </motion.div>
 

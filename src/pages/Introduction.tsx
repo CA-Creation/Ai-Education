@@ -36,10 +36,10 @@ const Introduction = () => {
               Artificial Intelligence (AI) in education involves the use of computer platforms to manage learning and administrative tasks that typically require human intelligence, with the goal of improving learning experiences and supporting both students and educators. 
               </p>
               <p className="text-gray-300 leading-relaxed mb-6">
-              Artificial intelligence  technology, such as robots, machine learning, an natural language processing, can customize learning by adjusting pace and content to meet the needs of each individual learner. Each student will have the opportunity and resources they require to accomplish their goals owing to this individualized approach, which helps accommodate a variety of learning styles and speeds ( OpenAI, 2025).
+              Artificial intelligence  technology, such as robots, machine learning, an natural language processing, can customize learning by adjusting pace and content to meet the needs of each individual learner. Each student will have the opportunity and resources they require to accomplish their goals owing to this individualized approach, which helps accommodate a variety of learning styles and speeds.
               </p>
               <p className="text-gray-300 leading-relaxed">
-              AI in education may encourage interactive learning environments and creative teaching strategies. AI has the potential to revolutionize education through making it more efficient, individualized, and accessible as it develops (Clugston, 2024).
+              AI in education may encourage interactive learning environments and creative teaching strategies. AI has the potential to revolutionize education through making it more efficient, individualized, and accessible as it develops.
 
               </p>
             </div>

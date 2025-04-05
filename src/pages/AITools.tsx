@@ -361,7 +361,7 @@ const AITools = () => {
                     <div className="md:w-2/5">
                       <div className="relative">
                         {/* Background glow */}
-                        <div className="absolute -inset-4 bg-gradient-to-r rom-emerald-400/10 to-teal-400/10 rounded-2xl blur-xl"></div>
+                        <div className="absolute -inset-4 bg-gradient-to-r from-emerald-400/10 to-teal-400/10 rounded-2xl blur-xl"></div>
                         
                         {/* Image container */}
                         <div className="relative rounded-2xl overflow-hidden shadow-2xl">
@@ -790,6 +790,21 @@ const AITools = () => {
               <section id="about" className="py-24 bg-blackdark:bg-gray-800 transition-colors">
                 <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
                   <div className="flex flex-col md:flex-row items-center gap-12">
+                  <div className="md:w-2/5">
+                      <div className="relative">
+                        {/* Background glow */}
+                        <div className="absolute -inset-4 bg-gradient-to-r from-emerald-400/10 to-teal-400/10 rounded-2xl blur-xl"></div>
+                        
+                        {/* Image container */}
+                        <div className="relative rounded-2xl overflow-hidden shadow-2xl">
+                          <MouseReactiveImage 
+                            src="/images/grammarly.png" 
+                            alt="grammarly" 
+                            className="rounded-2xl"
+                          />
+                        </div>
+                      </div>
+                    </div>
                     
                     
                     <div className="md:w-3/5">
@@ -810,21 +825,6 @@ const AITools = () => {
                       >
                         Try Now
                       </a>
-                    </div>
-                    <div className="md:w-2/5">
-                      <div className="relative">
-                        {/* Background glow */}
-                        <div className="absolute -inset-4 bg-gradient-to-r from-emerald-400/10 to-teal-400/10 rounded-2xl blur-xl"></div>
-                        
-                        {/* Image container */}
-                        <div className="relative rounded-2xl overflow-hidden shadow-2xl">
-                          <MouseReactiveImage 
-                            src="/images/grammarly.png" 
-                            alt="grammarly" 
-                            className="rounded-2xl"
-                          />
-                        </div>
-                      </div>
                     </div>
                   </div>
                 </div>

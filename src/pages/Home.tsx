@@ -1,9 +1,10 @@
 import React from 'react';
 import { motion } from 'framer-motion';
 import { useInView } from 'react-intersection-observer';
-import { Brain, Lightbulb, Users, TrendingUp, Sparkles, Zap } from 'lucide-react';
+import { ArrowDown, Brain, Lightbulb, Users, TrendingUp, Sparkles, Zap } from 'lucide-react';
 import { Link } from 'react-router-dom';
 import YouTube from 'react-youtube';
+
 
 const Home = () => {
   const [ref, inView] = useInView({
@@ -49,12 +50,12 @@ const Home = () => {
         <div
           className="absolute inset-0 z-0"
           style={{
-            backgroundImage: "url('https://images.unsplash.com/photo-1488590528505-98d2b5aba04b?ixlib=rb-1.2.1&auto=format&fit=crop&w=1950&q=80')",
+            backgroundImage: "url('/images/edu.png')",
             backgroundSize: 'cover',
             backgroundPosition: 'center',
           }}
         >
-          <div className="absolute inset-0 bg-gradient-to-r from-purple-900/90 to-blue-900/90"></div>
+          <div className="absolute inset-0 bg-gradient-to-r from-purple-900/90 to-blue-900/90 opacity-50 "></div>
         </div>
 
         <div className="relative z-10 text-center text-white px-4 max-w-4xl">
@@ -77,20 +78,18 @@ const Home = () => {
             transition={{ delay: 0.4 }}
             className="flex justify-center gap-4"
           >
-            <button className="px-8 py-3 bg-gradient-to-r from-purple-500 to-pink-500 rounded-full font-semibold hover:from-purple-600 hover:to-pink-600 transition-all duration-300 transform hover:scale-105">
+            <a href="#edu" className="inline-flex items-center px-8 py-4 bg-gradient-to-r from-purple-500 to-pink-500 text-white rounded-full hover:from-purple-600 hover:to-pink-600 transition-all transform hover:scale-105 shadow-lg hover:shadow-purple-500/25">
               Get Started
-            </button>
-            <button className="px-8 py-3 bg-white/10 rounded-full font-semibold hover:bg-white/20 transition-all duration-300 backdrop-blur-sm">
-              Learn More
-            </button>
+              <ArrowDown className="ml-2 h-5 w-5" />
+            </a>
           </motion.div>
         </div>
 
         {/* Animated shapes */}
         <div className="absolute inset-0 z-0 overflow-hidden">
-          <div className="absolute -top-4 -right-4 w-72 h-72 bg-purple-500 rounded-full mix-blend-multiply filter blur-xl opacity-70 animate-blob"></div>
-          <div className="absolute -bottom-8 -left-4 w-72 h-72 bg-yellow-500 rounded-full mix-blend-multiply filter blur-xl opacity-70 animate-blob animation-delay-2000"></div>
-          <div className="absolute -bottom-8 right-4 w-72 h-72 bg-pink-500 rounded-full mix-blend-multiply filter blur-xl opacity-70 animate-blob animation-delay-4000"></div>
+          <div className="absolute -top-4 -right-4 w-72 h-72 bg-purple-800 rounded-full mix-blend-multiply filter blur-xl opacity-50 animate-blob"></div>
+          <div className="absolute -bottom-8 -left-4 w-72 h-72 bg-yellow-500 rounded-full mix-blend-multiply filter blur-xl opacity-40 animate-blob animation-delay-2000"></div>
+          <div className="absolute -bottom-8 right-4 w-72 h-72 bg-pink-500 rounded-full mix-blend-multiply filter blur-xl opacity-40 animate-blob animation-delay-4000"></div>
         </div>
       </motion.section>
 
@@ -103,7 +102,7 @@ const Home = () => {
             animate={{ opacity: 1, y: 0 }}
             className="text-center mb-16"
           >
-            <h1 className="text-6xl font-bold bg-clip-text text-transparent bg-gradient-to-r from-emerald-400 to-teal-400 mb-6">
+            <h1 id='edu' className="text-6xl font-bold bg-clip-text text-transparent bg-gradient-to-r from-emerald-400 to-teal-400 mb-6">
               AI in Education
             </h1>
             <p className="text-xl text-gray-300 max-w-3xl mx-auto">
@@ -126,19 +125,19 @@ const Home = () => {
                 The evolution of new teaching technologies highly influenced teaching methodologies and students’ learning experiences, transitioning from traditional chalkboards to advanced systems powered by Artificial Intelligence (AI). This progression shows a continuous effort to enhance educational outcomes through technological innovation.
                 </p>
                 <p className="text-gray-300 leading-relaxed mb-4">
-                Introduced in the early 19th century, chalkboards became a staple in classrooms, enabling educators to present information visually to groups of students. This tool facilitated interactive teaching, allowing for real-time illustrations and explanations that were pivotal in conveying complex concepts. (OpenAI, 2025) Syndu (2024) highlighted that the simplicity and effectiveness of chalk boards made them a key part of education for over a century.
+                Introduced in the early 19th century, chalkboards became a staple in classrooms, enabling educators to present information visually to groups of students. This tool facilitated interactive teaching, allowing for real-time illustrations and explanations that were pivotal in conveying complex concepts. Syndu (2024) highlighted that the simplicity and effectiveness of chalk boards made them a key part of education for over a century.
                 </p>
                 <p className="text-gray-300 leading-relaxed mb-4">
-                The late 20th century witnessed the advent of personal computers in educational settings, marking a significant shift towards digital learning. Early programs like LOGO introduced students to programming, fostering problem-solving skills and logical thinking ( OpenAI, 2025). With the increased availability of computers, schools started incorporating them into the curricula. Computer labs became a staple in educational institutions, providing students with practical experience in technology. Syndu (2024) stated that this era was foundational for the advancement of technology in education.
+                The late 20th century witnessed the advent of personal computers in educational settings, marking a significant shift towards digital learning. Early programs like LOGO introduced students to programming, fostering problem-solving skills and logical thinking. With the increased availability of computers, schools started incorporating them into the curricula. Computer labs became a staple in educational institutions, providing students with practical experience in technology. Syndu (2024) stated that this era was foundational for the advancement of technology in education.
                 </p>
                 <p className="text-gray-300 leading-relaxed mb-4">
-                Building upon traditional chalkboards, interactive whiteboards emerged in the 1990s, offering dynamic, multimedia capabilities. These tools allowed educators to display digital content, annotate lessons, and engage students through interactive features (OpenAI, 2025)
+                Building upon traditional chalkboards, interactive whiteboards emerged in the 1990s, offering dynamic, multimedia capabilities. These tools allowed educators to display digital content, annotate lessons, and engage students through interactive features 
                 </p>
                 <p className="text-gray-300 leading-relaxed mb-4">
-                The 21st century introduced Augmented Reality (AR) and Virtual Reality (VR) into the educational landscape, providing immersive experiences that transcend traditional learning boundaries ( OpenAI, 2025). The students' ability to interact with complicated models, along with the capability of going on virtual trips and visiting different historical places, makes it easier for them to grasp the content of the lesson.  Syndu (2024) highlights that according to early studies, VR can contribute to 60-70% better outcomes for low performing students.
+                The 21st century introduced Augmented Reality (AR) and Virtual Reality (VR) into the educational landscape, providing immersive experiences that transcend traditional learning boundaries. The students' ability to interact with complicated models, along with the capability of going on virtual trips and visiting different historical places, makes it easier for them to grasp the content of the lesson.  Syndu (2024) highlights that according to early studies, VR can contribute to 60-70% better outcomes for low performing students.
                 </p>
                 <p className="text-gray-300 leading-relaxed mb-4">
-                At present, AI plays a main role in educational innovation by providing customized learning experiences that fulfill the students’ unique needs. AI-driven platforms analyze student data to adapt curricula, provide real-time feedback, and predict performance, thereby enhancing learning outcomes(OpenAI, 2025) These developments highlight the importance of AI and its ability to transform education in a way that supports students to develop innovative ideas and aid in accessibility. This document provides an extensive review of AI, especially its importance in an educational context.
+                At present, AI plays a main role in educational innovation by providing customized learning experiences that fulfill the students’ unique needs. AI-driven platforms analyze student data to adapt curricula, provide real-time feedback, and predict performance, thereby enhancing learning outcomes These developments highlight the importance of AI and its ability to transform education in a way that supports students to develop innovative ideas and aid in accessibility. This document provides an extensive review of AI, especially its importance in an educational context.
 
                 </p>
               </div>
@@ -165,34 +164,8 @@ const Home = () => {
       {/* Features Section */}
       <section ref={ref} className="py-20 bg-gray-900">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-          <div className="text-center mb-16">
-            <h2 className="text-4xl font-bold text-white mb-4">
-              Revolutionary Features
-            </h2>
-            <p className="text-xl text-gray-400">
-              Discover how AI is transforming education
-            </p>
-          </div>
-          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
-            {features.map((feature, index) => (
-              <motion.div
-                key={index}
-                initial={{ opacity: 0, y: 20 }}
-                animate={inView ? { opacity: 1, y: 0 } : {}}
-                transition={{ delay: index * 0.2 }}
-                className={`bg-gradient-to-r ${feature.gradient} p-[2px] rounded-2xl`}
-              >
-                <div className="h-full bg-gray-900 rounded-2xl p-6">
-                  <div className="mb-4">{feature.icon}</div>
-                  <h3 className="text-xl font-semibold text-white mb-2">
-                    {feature.title}
-                  </h3>
-                  <p className="text-gray-400">
-                    {feature.description}
-                  </p>
-                </div>
-              </motion.div>
-            ))}
+          <div className="grid grid-cols-1">
+            
           </div>
             {/* Teaching Beyond the Classroom */}
           <div className="pt-16 min-h-screen bg-gradient-to-b from-gray-900 via-gray-800 to-lightgray-900">
@@ -347,11 +320,11 @@ const Home = () => {
               transition={{ delay: 0.6 }}
               className="group"
             >
-              <Link to="/teaching-beyond" className="block">
+              <Link to="/Introduction" className="block">
                 <div className="bg-gradient-to-r from-cyan-500 to-blue-500 p-[2px] rounded-2xl">
                   <div className="bg-gray-900 rounded-2xl p-6 h-full group-hover:bg-gray-800 transition-all duration-300">
-                    <h3 className="text-xl font-semibold text-white mb-2">Teaching Beyond</h3>
-                    <p className="text-gray-400 mb-4">Explore how digital tools transform traditional teaching methods</p>
+                    <h3 className="text-xl font-semibold text-white mb-2">Introduction</h3>
+                    <p className="text-gray-400 mb-4">Explore More Information about Introduction in AI Education</p>
                     <span className="text-cyan-400 group-hover:text-cyan-300 transition-colors">Learn more →</span>
                   </div>
                 </div>
@@ -364,11 +337,11 @@ const Home = () => {
               transition={{ delay: 0.7 }}
               className="group"
             >
-              <Link to="/integrating-technology" className="block">
+              <Link to="/AITools" className="block">
                 <div className="bg-gradient-to-r from-emerald-500 to-teal-500 p-[2px] rounded-2xl">
                   <div className="bg-gray-900 rounded-2xl p-6 h-full group-hover:bg-gray-800 transition-all duration-300">
-                    <h3 className="text-xl font-semibold text-white mb-2">Integrating Technology</h3>
-                    <p className="text-gray-400 mb-4">Discover modern classroom technology integration</p>
+                    <h3 className="text-xl font-semibold text-white mb-2">AI Tools</h3>
+                    <p className="text-gray-400 mb-4">Explore how digital tools transform traditional teaching methodsn</p>
                     <span className="text-emerald-400 group-hover:text-emerald-300 transition-colors">Learn more →</span>
                   </div>
                 </div>
@@ -395,58 +368,6 @@ const Home = () => {
         </div>
       </section>
 
-      {/* Image Grid Section */}
-      <section className="py-20 bg-gray-900">
-        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
-            <motion.div
-              initial={{ opacity: 0, y: 20 }}
-              animate={{ opacity: 1, y: 0 }}
-              transition={{ delay: 0.2 }}
-              className="relative h-64 rounded-2xl overflow-hidden"
-            >
-              <img
-                src="https://images.unsplash.com/photo-1522202176988-66273c2fd55f?ixlib=rb-1.2.1&auto=format&fit=crop&w=800&q=80"
-                alt="Students collaborating"
-                className="w-full h-full object-cover"
-              />
-              <div className="absolute inset-0 bg-gradient-to-t from-purple-900/90 to-transparent flex items-end p-6">
-                <h3 className="text-xl font-semibold text-white">Collaborative Learning</h3>
-              </div>
-            </motion.div>
-            <motion.div
-              initial={{ opacity: 0, y: 20 }}
-              animate={{ opacity: 1, y: 0 }}
-              transition={{ delay: 0.3 }}
-              className="relative h-64 rounded-2xl overflow-hidden"
-            >
-              <img
-                src="https://images.unsplash.com/photo-1531482615713-2afd69097998?ixlib=rb-1.2.1&auto=format&fit=crop&w=800&q=80"
-                alt="AI Technology"
-                className="w-full h-full object-cover"
-              />
-              <div className="absolute inset-0 bg-gradient-to-t from-blue-900/90 to-transparent flex items-end p-6">
-                <h3 className="text-xl font-semibold text-white">AI Innovation</h3>
-              </div>
-            </motion.div>
-            <motion.div
-              initial={{ opacity: 0, y: 20 }}
-              animate={{ opacity: 1, y: 0 }}
-              transition={{ delay: 0.4 }}
-              className="relative h-64 rounded-2xl overflow-hidden"
-            >
-              <img
-                src="https://images.unsplash.com/photo-1434030216411-0b793f4b4173?ixlib=rb-1.2.1&auto=format&fit=crop&w=800&q=80"
-                alt="Digital Learning"
-                className="w-full h-full object-cover"
-              />
-              <div className="absolute inset-0 bg-gradient-to-t from-pink-900/90 to-transparent flex items-end p-6">
-                <h3 className="text-xl font-semibold text-white">Digital Transformation</h3>
-              </div>
-            </motion.div>
-          </div>
-        </div>
-      </section>
     </div>
   );
 };

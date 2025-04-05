@@ -115,7 +115,7 @@ const Tools = () => {
           </h1>
           <p className="text-xl text-gray-300 max-w-3xl mx-auto">
           Artificial Intelligence is rapidly changing the world around us. The integration of AI in education provides numerous benefits to both students and educators in various ways, 
-          but it also presents drawbacks that should be carefully considered to ensure an effective learning environment. (Carlie, 2023 ; Clugston, 2024)
+          but it also presents drawbacks that should be carefully considered to ensure an effective learning environment.
           </p>
           
         </motion.div>

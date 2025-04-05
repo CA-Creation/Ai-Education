@@ -2,6 +2,7 @@ import React from 'react';
 import YouTube from 'react-youtube';
 import { motion } from 'framer-motion';
 import { Rocket, Globe, Cpu, Network } from 'lucide-react';
+import MouseReactiveImage from '../components/MouseReactiveImage';
 
 const Futureofai = () => {
   const features = [
@@ -35,9 +36,17 @@ const Futureofai = () => {
           animate={{ opacity: 1, y: 0 }}
           className="text-center mb-16"
         >
-          <h1 className="text-5xl font-bold bg-clip-text text-transparent bg-gradient-to-r from-cyan-400 to-blue-400 mb-6">
+          <h1 className="text-5xl font-bold bg-clip-text text-transparent bg-gradient-to-r from-purple-400 to-pink-400 mb-6">
             The Future of AI in Education
           </h1>
+          <div className="relative overflow-hidden rounded-2xl">
+              <div className="absolute inset-0 bg-gradient-to-r from-purple-500/20 to-pink-500/20 backdrop-blur-xl"></div>
+              <MouseReactiveImage
+                src="/images/futureedu.jpg" 
+                alt="AI in Education" 
+                className="w-full h-96 object-cover rounded-2xl mix-blend-overlay"
+              />
+            </div>
         </motion.div>
 
         <div className="grid grid-cols-1 lg:grid-cols-1 gap-12">
@@ -56,7 +65,7 @@ const Futureofai = () => {
               </p>
             </div>
 
-            <div className="bg-gradient-to-r from-cyan-500/10 to-blue-500/10 p-8 rounded-2xl backdrop-blur-xl border border-cyan-500/20">
+            <div className="bg-gradient-to-r from-purple-500/10 to-pink-500/10 p-8 rounded-2xl backdrop-blur-xl border border-purple-500/20">
               <h2 className="text-3xl font-bold text-white mb-4">
                 Personalized Learning
               </h2>
@@ -107,6 +116,13 @@ const Futureofai = () => {
               policymakers, and technology developers will be essential in forming an AI-powered education system that benefits 
               all learners.
               </p>
+
+              <a target='_blank'
+                href="https://quizlet.com/practice-test/practice-test-c5960a42-54a2-430e-a110-c96d78c451c1?i=6hpzj1&x=1oqt&__overrideABs=FeatureAccess-practiceTests"
+                className="inline-block px-6 py-3 bg-gradient-to-r from-purple-400 to-pink-400 text-white rounded-full hover:from-purple-600 hover:to-pink-600 transition-all transform hover:scale-105 shadow-lg hover:shadow-purple-500/25 mt-8"
+                >
+                Assessment
+              </a>
             </div>
           </motion.div>
 
