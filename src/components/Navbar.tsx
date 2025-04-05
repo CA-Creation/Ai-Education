@@ -15,11 +15,11 @@ const Navbar: React.FC<NavbarProps> = ({ isDarkMode, toggleDarkMode }) => {
   const navItems = [
     { path: '/', label: 'Home' },
     { path: '/Introduction', label: 'Introduction' },
-    { path: '/integrating-technology', label: ' AI tools' },
+    { path: '/AITools', label: ' AI tools' },
     { path: '/ProsandCons', label: 'Pros and Cons in AI' },
-    { path: '/Introduction1', label: 'Ethical Considerations' },
-    { path: '/blog', label: 'The Future of AI in Education' },
-    { path: '/contact', label: 'References' },
+    { path: '/EthicalConsiderations', label: 'Ethical Considerations' },
+    { path: '/Futureofai', label: 'The Future of AI in Education' },
+    { path: '/References', label: 'References' },
   ];
 
   return (

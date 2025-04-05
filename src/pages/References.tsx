@@ -1,7 +1,7 @@
 import React from 'react';
 import { motion } from 'framer-motion';
 
-const Blog = () => {
+const References = () => {
   const blogPosts = [
     {
       title: "The Evolution of AI in Education",
@@ -78,4 +78,4 @@ const Blog = () => {
   );
 };
 
-export default Blog;
+export default References;

@@ -4,17 +4,12 @@ import { AnimatePresence } from 'framer-motion';
 import Navbar from './components/Navbar';
 import Footer from './components/Footer';
 import Home from './pages/Home';
-import IntegratingTechnology from './pages/IntegratingTechnology';
+import AITools from './pages/AITools';
 import Introduction from './pages/Introduction';
-import Introduction1 from './pages/Introduction1';
+import EthicalConsiderations from './pages/EthicalConsiderations';
 import Tools from './pages/ProsandCons';
-import Administration from './pages/Administration';
-import Engagement from './pages/Engagement';
-import Considerations from './pages/Considerations';
-import Ethics from './pages/Ethics';
-import Future from './pages/Future';
-import Blog from './pages/Blog';
-import Contact from './pages/Contact';
+import Futureofai from './pages/Futureofai';
+import References from './pages/References';
 
 
 function App() {
@@ -32,16 +27,11 @@ function App() {
           <Routes>
             <Route path="/" element={<Home />} />
             <Route path="/introduction" element={<Introduction />} />
-            <Route path="/integrating-technology" element={<IntegratingTechnology />} />
-            <Route path="/introduction1" element={<Introduction1 />} />
+            <Route path="/AITools" element={<AITools />} />
+            <Route path="/EthicalConsiderations" element={<EthicalConsiderations />} />
             <Route path="/ProsandCons" element={<Tools />} />
-            <Route path="/administration" element={<Administration />} />
-            <Route path="/engagement" element={<Engagement />} />
-            <Route path="/considerations" element={<Considerations />} />
-            <Route path="/ethics" element={<Ethics />} />
-            <Route path="/future" element={<Future />} />
-            <Route path="/blog" element={<Blog />} />
-            <Route path="/contact" element={<Contact />} />
+            <Route path="/Futureofai" element={<Futureofai />} />
+            <Route path="/References" element={<References/>} />
           </Routes>
         </AnimatePresence>
         <Footer />
