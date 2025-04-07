@@ -26,10 +26,17 @@ The project contains the following main tabs/pages:
 > https://splendorous-fenglisu-10569f.netlify.app/
 
 
-## 📦 Installation & Usage
+## 📦 Installation
+ **Installation**
+  ```bash
   npm i
   npm i Lucide-React
+  ```
  **Clone the repository**
-   ```bash
+  ```bash
    git clone https://github.com/yourusername/ai-in-education.git
    cd ai-in-education
+```
+```bash
+npm run dev
+```
