@@ -34,7 +34,7 @@ The project contains the following main tabs/pages:
   ```
  **Clone the repository**
   ```bash
-   git clone https://github.com/yourusername/ai-in-education.git
+   git clone https://github.com/CA-Creation/ai-in-education.git
    cd ai-in-education
 ```
 ```bash
